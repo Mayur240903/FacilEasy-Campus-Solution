@@ -26,3 +26,7 @@ dist-ssr
 # Old Firebase files to ignore
 /firebase.js
 /firebase-deploy.js
+
+# Environment variables
+.env
+

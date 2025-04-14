@@ -4,18 +4,21 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore, doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { getFirebase } from "firebase/firestore";
+import { dotenv } from "dotenv";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCAQMnrK7XszfNWW07EtXyFBcioTZEgKL4",
-  authDomain: "facileasy-744f9.firebaseapp.com",
-  projectId: "facileasy-744f9",
-  storageBucket: "facileasy-744f9.appspot.com",
-  messagingSenderId: "54107047306",
-  appId: "1:54107047306:web:4a09125c9d7ab3adb0f473",
-  measurementId: "G-W5KJXHLZS0"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
+
 
 // Initialize Firebase - only if it hasn't been initialized already
 let app;
