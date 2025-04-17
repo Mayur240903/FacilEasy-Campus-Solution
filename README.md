@@ -122,8 +122,8 @@ FacilEasy is a web-based platform for managing college campus facilities, offeri
 - React Router DOM
 
 ## Develop by
--Mayur Chaudhari
+- Mayur Chaudhari
 
 ## Contact
--Email: mayurchaudhari2409@gmail.com
+- Email: mayurchaudhari2409@gmail.com
  
